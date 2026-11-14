@@ -11,13 +11,11 @@ const STYLE_PROPERTY_PREFIX = "--DocsInDark_";
 const SELECTOR_PREFIX = "DocsInDark_";
 
 const links = {
-    github: "https://github.com/waymondrang/docsafterdark",
-    donate: "https://www.buymeacoffee.com/waymondrang",
-    releases: "https://github.com/waymondrang/docsafterdark/releases",
+    github: "https://github.com/brendevr/docsindark",
+    releases: "https://github.com/brendevr/docsindark/releases",
     release: (version: string) => {
-        return `https://github.com/waymondrang/docsafterdark/releases/tag/v${version}`;
+        return `https://github.com/brendevr/docsindark/releases/tag/v${version}`;
     },
-    guide: "https://docsafterdark.com/guide",
 };
 
 const documentBackgroundStyles: Record<DocumentBackground, string> = {

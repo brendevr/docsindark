@@ -605,12 +605,12 @@ class DocsInDark {
 
         if (this.extensionData.version.last_version == "") {
             textElement.textContent =
-                "Thank you for installing DocsInDark! Read release notes on ";
+                "Thank you for installing DocsInDark! You can read the release notes at ";
         } else {
             textElement.textContent =
                 "DocsInDark has been updated to version " +
                 CURRENT_VERSION +
-                ". Read release notes on ";
+                ". You can read the release notes at ";
         }
         messageElement.appendChild(textElement);
 
