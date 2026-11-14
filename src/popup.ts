@@ -576,20 +576,11 @@ class LinkManager {
     private githubLink = document.querySelector(
         "#githubLink"
     ) as HTMLButtonElement;
-    private donateLink = document.querySelector(
-        "#donateLink"
-    ) as HTMLButtonElement;
 
     initialize(): void {
         this.githubLink.addEventListener("click", () => {
             browser_ns.tabs.create({
                 url: links.github,
-            });
-        });
-
-        this.donateLink.addEventListener("click", () => {
-            browser_ns.tabs.create({
-                url: links.donate,
             });
         });
     }
