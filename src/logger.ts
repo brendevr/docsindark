@@ -8,7 +8,7 @@ class Logger {
     static currentLevel = __IS_PRODUCTION__
         ? LOG_LEVELS.INFO
         : LOG_LEVELS.DEBUG;
-    static prefixName = "DocsAfterDark";
+    static prefixName = "DocsInDark";
 
     static setName(name: string) {
         this.prefixName = name;

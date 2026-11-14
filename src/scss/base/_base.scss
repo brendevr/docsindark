@@ -2517,7 +2517,7 @@ img.docs-generativeai-onboarding-dialog-image,
     color: var(--sheets-blue-text) !important;
 }
 
-html.DocsAfterDark_shareDialog {
+html.DocsInDark_shareDialog {
     background: none !important;
     background-color: transparent !important;
 }
@@ -2532,16 +2532,16 @@ html.DocsAfterDark_shareDialog {
 }
 
 .kix-canvas-tile-content rect[fill="rgba(255,255,255,1)"] {
-    fill: var(--DocsAfterDark_documentBackground) !important;
+    fill: var(--DocsInDark_documentBackground) !important;
 }
 
 #contents > div {
-    background-color: var(--DocsAfterDark_documentBackground);
+    background-color: var(--DocsInDark_documentBackground);
 }
 
 .kix-canvas-tile-content[style*="background-color: rgb(255, 255, 255)"],
 .kix-appview-editor[style*="background-color: rgb(255, 255, 255)"] {
-    background-color: var(--DocsAfterDark_documentBackground) !important;
+    background-color: var(--DocsInDark_documentBackground) !important;
 }
 
 //////////////////////////
@@ -2550,17 +2550,17 @@ html.DocsAfterDark_shareDialog {
 
 .kix-appview-editor canvas,
 .kix-cursor {
-    filter: var(--DocsAfterDark_documentInvert);
+    filter: var(--DocsInDark_documentInvert);
 }
 
 [id$="-grid-table-container"] canvas,
 .trix-data-prep-insights-chart canvas,
 .waffle-revisions-frame {
-    filter: var(--DocsAfterDark_spreadsheetInvert);
+    filter: var(--DocsInDark_spreadsheetInvert);
 }
 
 // DOCUMENT BORDER SHOULD BE CONTROLLABLE IN ANY MODE
 
 .kix-page-paginated {
-    outline: var(--DocsAfterDark_documentBorder);
+    outline: var(--DocsInDark_documentBorder);
 }

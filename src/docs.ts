@@ -51,12 +51,12 @@ const REPLACEMENTS_PATH = "assets/replacements/";
 // watcher) and storage writes belong to the top-level document only.
 const IS_FRAME = window !== window.top;
 
-class DocsAfterDark {
+class DocsInDark {
     private extensionData: ExtensionData = defaultExtensionData;
     private isTempDisabled: boolean = false;
 
     async initialize(): Promise<void> {
-        Logger.info("Hello from DocsAfterDark!");
+        Logger.info("Hello from DocsInDark!");
 
         const data = await getExtensionData();
 
@@ -605,10 +605,10 @@ class DocsAfterDark {
 
         if (this.extensionData.version.last_version == "") {
             textElement.textContent =
-                "Thank you for installing DocsAfterDark! Read release notes on ";
+                "Thank you for installing DocsInDark! Read release notes on ";
         } else {
             textElement.textContent =
-                "DocsAfterDark has been updated to version " +
+                "DocsInDark has been updated to version " +
                 CURRENT_VERSION +
                 ". Read release notes on ";
         }
@@ -694,10 +694,10 @@ class DocsAfterDark {
 
 (async () => {
     if (isOnHomepage()) {
-        Logger.debug("On Google Docs homepage, will not enable DocsAfterDark.");
+        Logger.debug("On Google Docs homepage, will not enable DocsInDark.");
         return;
     }
 
-    const extension = new DocsAfterDark();
+    const extension = new DocsInDark();
     extension.initialize();
 })();

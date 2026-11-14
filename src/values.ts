@@ -7,8 +7,8 @@ import {
     InvertMode,
 } from "./types";
 
-const STYLE_PROPERTY_PREFIX = "--DocsAfterDark_";
-const SELECTOR_PREFIX = "DocsAfterDark_";
+const STYLE_PROPERTY_PREFIX = "--DocsInDark_";
+const SELECTOR_PREFIX = "DocsInDark_";
 
 const links = {
     github: "https://github.com/waymondrang/docsafterdark",

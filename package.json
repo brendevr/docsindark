@@ -1,5 +1,5 @@
 {
-    "name": "docsafterdark",
+    "name": "docsindark",
     "version": "2.0.4",
     "description": "Beyond dark mode for Google Docs",
     "type": "module",
@@ -7,9 +7,9 @@
         "@eslint/js": "^9.39.2",
         "@types/archiver": "^7.0.0",
         "@types/node": "^25.0.9",
-        "archiver": "^7.0.1",
+        "archiver": "^8.0.0",
         "concurrently": "^9.2.1",
-        "copy-webpack-plugin": "^13.0.1",
+        "copy-webpack-plugin": "^14.0.0",
         "eslint": "^9.39.2",
         "globals": "^16.5.0",
         "prettier": "^3.7.4",
@@ -19,20 +19,19 @@
         "ts-loader": "^9.5.4",
         "ts-node": "^10.9.2",
         "typescript": "^5.9.3",
-        "typescript-eslint": "^8.52.0",
-        "web-ext": "^9.2.0",
+        "typescript-eslint": "^8.36.0",
+        "web-ext": "^10.8.0",
         "webpack": "^5.104.1",
         "webpack-cli": "^6.0.1"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/waymondrang/docsafterdark.git"
+        "url": "git+https://github.com/brendevr/docsindark.git"
     },
     "author": "Raymond Wang",
     "bugs": {
-        "url": "https://github.com/waymondrang/docsafterdark/issues"
+        "url": "https://github.com/brendevr/docsindark/issues"
     },
-    "homepage": "https://docsafterdark.com/",
     "scripts": {
         "build": "./build.sh",
         "check": "prettier --check . && eslint src && stylelint '**/*.scss'",

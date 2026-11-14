@@ -17,13 +17,13 @@
     font-size: 14px;
 }
 
-#DocsAfterDark_button {
-    // --DocsAfterDark variables will be available when inserted
+#DocsInDark_button {
+    // --DocsInDark variables will be available when inserted
     @include shared-style;
 
     position: fixed;
     left: 2.25rem;
-    bottom: var(--DocsAfterDark_buttonPosition);
+    bottom: var(--DocsInDark_buttonPosition);
 
     height: 2.25rem;
     width: 2.25rem;
@@ -83,7 +83,7 @@
     }
 }
 
-#DocsAfterDark_updateNotification {
+#DocsInDark_updateNotification {
     @include shared-style;
 
     color: var(--secondary-text-color, #f2f2f2);

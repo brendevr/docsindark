@@ -2,7 +2,7 @@
 
 <b>DocsAfterDark, the project this project builds on: </b> https://github.com/waymondrang/docsafterdark/
 
-DocsAfterDark is an extension which overrides the styles present in Google Docs and Google Sheets to achieve a dark theme.
+DocsInDark is an extension which overrides the styles present in Google Docs and Google Sheets to achieve a dark theme.
 <br>Since, ya know, google with its hundreds of billions of dollars can't do it themselves.
 <br>Expect bugs, because it's really hard to style a page if you aren't the author of it.
 <hr>

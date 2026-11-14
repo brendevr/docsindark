@@ -614,7 +614,7 @@ class Popup extends PopupState {
         new toggleCategoryComponent("advancedCategory");
 
     async initialize() {
-        Logger.info("Hello from DocsAfterDark!");
+        Logger.info("Hello from DocsInDark!");
 
         // Set the state's data in case any initialize functions need to
         // access it (ideally state is consumed during update function).

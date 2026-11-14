@@ -36,7 +36,7 @@ function getBrowserNamespace(): BrowserAPI {
 
 /**
  * Sets the CSS property onto the html element's style declaration
- * @param property Name of property without --DocsAfterDark_ prefix
+ * @param property Name of property without --DocsInDark_ prefix
  */
 function setStyleProperty(property: string, value: string) {
     document.documentElement.style.setProperty(

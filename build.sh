@@ -102,7 +102,7 @@ if [ -z "$VERSION" ] || [ "$VERSION" = "null" ]; then
     exit 1
 fi
 
-print_step "packaging docsafterdark v$VERSION..."
+print_step "packaging docsindark v$VERSION..."
 
 # create release directory
 if [ ! -d "$RELEASE_DIR" ]; then
@@ -113,7 +113,7 @@ fi
 # note: the build script will only warn you about an existing package with
 # the same version. it will remove it and overwrite it by default.
 
-TARGET_FILE="${RELEASE_DIR}/DocsAfterDark_${VERSION}.zip"
+TARGET_FILE="${RELEASE_DIR}/DocsInDark${VERSION}.zip"
 if [ -f "$TARGET_FILE" ]; then
     print_warning "packaged version already exists: $TARGET_FILE"
 
