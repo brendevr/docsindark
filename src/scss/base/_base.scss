@@ -742,8 +742,7 @@ body,
 .miniChapterSwitcherContainerView.miniChapterSwitcherPageless .miniChapterSwitcherCore .miniChapterSwitcherView.docs-material-gm-select .docs-material-gm-select-outer-box, .miniChapterSwitcherContainerView.miniChapterSwitcherPageless .miniChapterSwitcherCore .miniChapterSwitcherView.docs-material-gm-select .miniChapterSwitcherChapterIcon, .miniChapterSwitcherContainerView.miniChapterSwitcherPageless .miniChapterSwitcherCore .miniChapterSwitcherView.docs-material-gm-select .miniChapterSwitcherNavigationEntryPointIcon,
 .miniChapterSwitcherContainerView.miniChapterSwitcherPageless.breadcrumbSwitcherUiVariant .miniChapterSwitcherCore .miniChapterSwitcherView.docs-material-gm-select .miniChapterSwitcherNavigationEntryPointMask,
 .goog-toolbar.kix-citations-source-list-item-toolbar,
-.miniChapterSwitcherChapterList.goog-menu.goog-menu-vertical.miniChapterSwitcherChapterListViewContainer .goog-menuitem.goog-menuitem-active, .miniChapterSwitcherChapterList.goog-menu.goog-menu-vertical.miniChapterSwitcherChapterListViewContainer .goog-menuitem.goog-option-selected
-{
+.miniChapterSwitcherChapterList.goog-menu.goog-menu-vertical.miniChapterSwitcherChapterListViewContainer .goog-menuitem.goog-menuitem-active, .miniChapterSwitcherChapterList.goog-menu.goog-menu-vertical.miniChapterSwitcherChapterListViewContainer .goog-menuitem.goog-option-selected {
     background: var(--secondary-background-color);
 }
 
@@ -751,14 +750,38 @@ body,
 div#docs-chrome[style]:not([style=""]),
 div[style="background: #F0F6FF; border: 1px solid black; margin-top: 35px; padding: 10px 125px; width: 300px;"],
 .hiddenFeaturesBubbleContainer,
-#formula-bar, #formula-bar-name-box-wrapper, #t-formula-bar-input, #t-formula-bar-input > .cell-input, .formula-bar-separator,
-.waffle-name-box-container, .waffle-name-box,
-.grid-shim-end-ltr, .native-scrollbar-ltr,
-.grid-bottom-bar, .docs-sheet-status-container-avs,
-.docs-tiled-sidebar, .docs-sidebar-tile-controls, .docs-sidebar-tile-header, .waffle-sidebar-content, .waffle-sidebar-title, .waffle-named-ranges-add-range-inactive, .waffle-named-ranges-pill, .waffle-named-formulas-sidebar-list-view-footer-action-buttons,
-.label-input-label, .waffle-named-formulas-sidebar-create-step-a-new-argument-name-field-input, .waffle-ritz-protection-pill, .waffle-ritz-protection-edit-pill, .trix-data-prep-column-label-container,
-.goog-flat-menu-button-caption, .waffle-datavalidation-view-pill, .goog-flat-menu-button, .waffle-dropdown-chip-renderer, .waffle-inline-assistant-sidebar-insights-promo,
-.appsDocsRevisionsWizSidebarTileContainer, .jfk-bubble-promo, .grid-shim-bottom {
+#formula-bar,
+#formula-bar-name-box-wrapper,
+#t-formula-bar-input,
+#t-formula-bar-input > .cell-input,
+.formula-bar-separator,
+.waffle-name-box-container,
+.waffle-name-box,
+.grid-shim-end-ltr,
+.native-scrollbar-ltr,
+.grid-bottom-bar,
+.docs-sheet-status-container-avs,
+.docs-tiled-sidebar,
+.docs-sidebar-tile-controls,
+.docs-sidebar-tile-header,
+.waffle-sidebar-content,
+.waffle-sidebar-title,
+.waffle-named-ranges-add-range-inactive,
+.waffle-named-ranges-pill,
+.waffle-named-formulas-sidebar-list-view-footer-action-buttons,
+.label-input-label,
+.waffle-named-formulas-sidebar-create-step-a-new-argument-name-field-input,
+.waffle-ritz-protection-pill,
+.waffle-ritz-protection-edit-pill,
+.trix-data-prep-column-label-container,
+.goog-flat-menu-button-caption,
+.waffle-datavalidation-view-pill,
+.goog-flat-menu-button,
+.waffle-dropdown-chip-renderer,
+.waffle-inline-assistant-sidebar-insights-promo,
+.appsDocsRevisionsWizSidebarTileContainer,
+.jfk-bubble-promo,
+.grid-shim-bottom {
     background: var(--secondary-background-color) !important;
 }
 
@@ -977,7 +1000,8 @@ div[style="background: #F0F6FF; border: 1px solid black; margin-top: 35px; paddi
 .kix-citations-search-result-view-attributes-bottom,
 .docs-material #docs-script-button-bar .jfk-button.jfk-button-active,
 .docs-material #docs-script-button-bar .jfk-button.jfk-button-checked,
-.jfk-textinput, .waffle-range-selection-container,
+.jfk-textinput,
+.waffle-range-selection-container,
 .waffle-data-validation-auto-complete-row-active {
     background-color: var(--tertiary-background-color);
 }
@@ -1260,7 +1284,8 @@ div[style="background: #F0F6FF; border: 1px solid black; margin-top: 35px; paddi
 }
 
 .docs-checkupdialog-suggestion-button-focused.jfk-button-hover,
-.waffle-name-box-container:hover, .waffle-name-box:hover,
+.waffle-name-box-container:hover,
+.waffle-name-box:hover,
 .waffle-named-box-menu-open-sidebar-button-hover {
     background: var(--hover-background-color) !important;
 }
@@ -1356,7 +1381,8 @@ div[style="background: #F0F6FF; border: 1px solid black; margin-top: 35px; paddi
 }
 
 .kix-drawing-bubble-edit-button.docs-material-button-hover,
-.goog-control-hover, .goog-control-focused {
+.goog-control-hover,
+.goog-control-focused {
     background-color: var(--hover-background-color) !important;
 }
 
@@ -2430,10 +2456,11 @@ img.docs-generativeai-onboarding-dialog-image,
 .waffle-named-formulas-formula-definition-input,
 .waffle-named-formulas-sidebar-argument-chip-content,
 .waffle-dropdown-chip {
-    filter: invert(1.0) hue-rotate(180deg) !important;
+    filter: invert(1) hue-rotate(180deg) !important;
 }
 
-.tablePropertiesSidebarButtonGroup, .tablePropertiesSidebarLeftAlignedButtonGroup {
+.tablePropertiesSidebarButtonGroup,
+.tablePropertiesSidebarLeftAlignedButtonGroup {
     filter: invert(0.85) hue-rotate(180deg);
 }
 
@@ -2500,20 +2527,41 @@ img.docs-generativeai-onboarding-dialog-image,
 
 // TEMPORARY SELECTORS ON POPUP DIALOGES
 
-.eVDL2-WsjYwc, .xEuuXd, .CeSLIf, .GH53Vc, .hVDDMd, .QipISb, .o8tTsf {
+.eVDL2-WsjYwc,
+.xEuuXd,
+.CeSLIf,
+.GH53Vc,
+.hVDDMd,
+.QipISb,
+.o8tTsf {
     background-color: var(--secondary-background-color) !important;
     background: var(--secondary-background-color) !important;
 }
 
-.zv7tnb, .ifDqI, .Jw4Ike, .quTB6, .mUIrbf-vQzf8d {
+.zv7tnb,
+.ifDqI,
+.Jw4Ike,
+.quTB6,
+.mUIrbf-vQzf8d {
     color: var(--primary-text-color) !important;
 }
 
-.EDtwUe, .RJS6zb {
+.EDtwUe,
+.RJS6zb {
     color: var(--secondary-text-color) !important;
 }
 
-.I9OJHe, .mdf2C, .xjBc3b, .iPMcJc, .kM7Sgc, .FyWfTd, .nsKVp, .CeSLIf, .GH53Vc, .hVDDMd, .QipISb {
+.I9OJHe,
+.mdf2C,
+.xjBc3b,
+.iPMcJc,
+.kM7Sgc,
+.FyWfTd,
+.nsKVp,
+.CeSLIf,
+.GH53Vc,
+.hVDDMd,
+.QipISb {
     color: var(--sheets-blue-text) !important;
 }
 

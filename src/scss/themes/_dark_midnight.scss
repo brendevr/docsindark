@@ -35,8 +35,6 @@ html.DocsInDark_dark.DocsInDark_midnight {
 
     --accent-color: hsl(var(--DocsInDark_accentHue) 40% 60%);
     --light-accent-color: hsl(var(--DocsInDark_accentHue) 40% 70% / 10%);
-    --light-accent-hover-color: hsl(
-        var(--DocsInDark_accentHue) 60% 60% / 20%
-    );
+    --light-accent-hover-color: hsl(var(--DocsInDark_accentHue) 60% 60% / 20%);
     --accent-hover-color: hsl(var(--DocsInDark_accentHue) 60% 80% / 100%);
 }

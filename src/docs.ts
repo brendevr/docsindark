@@ -319,12 +319,16 @@ class DocsInDark {
         console.log(location.pathname);
         if (this.extensionData.dark_mode.variant === DarkModeOperation.Normal) {
             addClassToHTML(themeClasses.dark, themeClasses.normal);
-            if (location.pathname.startsWith("/drivesharing/")) { addClassToHTML("shareDialog", themeClasses.normal); }
+            if (location.pathname.startsWith("/drivesharing/")) {
+                addClassToHTML("shareDialog", themeClasses.normal);
+            }
         } else if (
             this.extensionData.dark_mode.variant === DarkModeOperation.Midnight
         ) {
             addClassToHTML(themeClasses.dark, themeClasses.midnight);
-            if (location.pathname.startsWith("/drivesharing/")) { addClassToHTML("shareDialog", themeClasses.midnight); }
+            if (location.pathname.startsWith("/drivesharing/")) {
+                addClassToHTML("shareDialog", themeClasses.midnight);
+            }
         } else {
             throw new Error(
                 "Unknown dark mode operation: " +

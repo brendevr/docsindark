@@ -26,9 +26,7 @@ html.DocsInDark_light.DocsInDark_normal {
 
     --accent-color: hsl(var(--DocsInDark_accentHue) 25% 50%);
     --light-accent-color: hsl(var(--DocsInDark_accentHue) 25% 60% / 10%);
-    --light-accent-hover-color: hsl(
-        var(--DocsInDark_accentHue) 25% 40% / 20%
-    );
+    --light-accent-hover-color: hsl(var(--DocsInDark_accentHue) 25% 40% / 20%);
     --accent-hover-color: hsl(var(--DocsInDark_accentHue) 25% 60% / 100%);
 
     //////////////////
