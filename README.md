@@ -10,8 +10,10 @@ If you encounter bugs, please report it in issues.
 
 If you want to make a PR, feel free. Using LLMs for PRs is generally discouraged, but if you are an accomplished programmer (I will check your github account) then it's fine.
 <hr>
-![google_docs_demo](/img/google_docs_demo.png)
-![google_sheets_demo](/img/google_sheets_demo.png)
-![google_share_demo](/img/google_share_demo.png)
+<p align="center">
+  <img src="/img/google_docs_demo.png" alt="" height="400px">
+ <img src="/img/google_sheets_demo.png" alt="" height="400px">
+ <img src="/img/google_share_demo.png" alt="" height="400px">
+</p>
 <hr>
 stay creative, godspeed :heart:
