@@ -2595,8 +2595,14 @@ html.DocsInDark_shareDialog {
 // CONTROLLED VARIABLES //
 //////////////////////////
 
+.kix-page-paginated {
+    background-color: var(--root-background-color);
+}
+
 .kix-appview-editor canvas,
+.kix-page-paginated canvas,
 .kix-cursor {
+    mix-blend-mode: lighten;
     filter: var(--DocsInDark_documentInvert);
 }
 
