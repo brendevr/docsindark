@@ -325,7 +325,9 @@ textarea.docs-search-bar-input.goog-textarea,
 .kix-citations-search-input,
 .kix-citations-search-result-attribute-value,
 .chapters-in-cslv .docs-grille-version-history .docs-revisions-authorwidget-hat,
-.docs-grille-gm3 .docs-chat-message-tooltip-content {
+.docs-grille-gm3 .docs-chat-message-tooltip-content,
+.docs-material-button-content, .waffle-datavalidation-edit-pill-range-label, .waffle-datavalidation-edit-pill-section-header,
+.waffle-inline-assistant-sidebar-insights-body, .waffle-inline-assistant-sidebar-empty-message {
     color: var(--primary-text-color);
 }
 
@@ -333,7 +335,14 @@ textarea.docs-search-bar-input.goog-textarea,
     .kix-drawing-bubble-edit-button:not(.docs-material-button-disabled),
 .kix-rich-link-view,
 .apps-menuitem .goog-menuitem-label[style*="color: rgb(0, 0, 0);"],
-.kix-citations-source-list-item-content span {
+.kix-citations-source-list-item-content span,
+.waffle-named-formulas-sidebar-zero-state-promo-msg,
+.waffle-named-formulas-sidebar-create-step-a-write-formula-details-message,
+.waffle-named-formulas-sidebar-create-step-a-named-function-details-message,
+.waffle-named-formulas-sidebar-create-step-a-argument-names-field-message,
+.trix-data-prep-insight-row *,
+.waffle-datavalidation-view-pill-range,
+.appsElementsCollapsibleListItemContentSection * {
     color: var(--primary-text-color) !important;
 }
 
@@ -616,6 +625,14 @@ a:link,
     color: var(--accent-color) !important;
 }
 
+//////////////////////////////////
+// COLOR: SPREADSHEET BLUE TEXT //
+//////////////////////////////////
+
+.docs-sheet-tab-name {
+    color: var(--sheets-blue-text) !important;
+}
+
 ////////////////////////////////////
 // COLOR: HOVER ACCENT TEXT COLOR //
 ////////////////////////////////////
@@ -725,14 +742,23 @@ body,
 .miniChapterSwitcherContainerView.miniChapterSwitcherPageless .miniChapterSwitcherCore .miniChapterSwitcherView.docs-material-gm-select .docs-material-gm-select-outer-box, .miniChapterSwitcherContainerView.miniChapterSwitcherPageless .miniChapterSwitcherCore .miniChapterSwitcherView.docs-material-gm-select .miniChapterSwitcherChapterIcon, .miniChapterSwitcherContainerView.miniChapterSwitcherPageless .miniChapterSwitcherCore .miniChapterSwitcherView.docs-material-gm-select .miniChapterSwitcherNavigationEntryPointIcon,
 .miniChapterSwitcherContainerView.miniChapterSwitcherPageless.breadcrumbSwitcherUiVariant .miniChapterSwitcherCore .miniChapterSwitcherView.docs-material-gm-select .miniChapterSwitcherNavigationEntryPointMask,
 .goog-toolbar.kix-citations-source-list-item-toolbar,
-.miniChapterSwitcherChapterList.goog-menu.goog-menu-vertical.miniChapterSwitcherChapterListViewContainer .goog-menuitem.goog-menuitem-active, .miniChapterSwitcherChapterList.goog-menu.goog-menu-vertical.miniChapterSwitcherChapterListViewContainer .goog-menuitem.goog-option-selected,
-.hiddenFeaturesBubbleContainer {
+.miniChapterSwitcherChapterList.goog-menu.goog-menu-vertical.miniChapterSwitcherChapterListViewContainer .goog-menuitem.goog-menuitem-active, .miniChapterSwitcherChapterList.goog-menu.goog-menu-vertical.miniChapterSwitcherChapterListViewContainer .goog-menuitem.goog-option-selected
+{
     background: var(--secondary-background-color);
 }
 
 .docs-titlebar-buttons.docs-titlebar-buttons-view-mode[style]:not([style=""]),
 div#docs-chrome[style]:not([style=""]),
-div[style="background: #F0F6FF; border: 1px solid black; margin-top: 35px; padding: 10px 125px; width: 300px;"] {
+div[style="background: #F0F6FF; border: 1px solid black; margin-top: 35px; padding: 10px 125px; width: 300px;"],
+.hiddenFeaturesBubbleContainer,
+#formula-bar, #formula-bar-name-box-wrapper, #t-formula-bar-input, #t-formula-bar-input > .cell-input, .formula-bar-separator,
+.waffle-name-box-container, .waffle-name-box,
+.grid-shim-end-ltr, .native-scrollbar-ltr,
+.grid-bottom-bar, .docs-sheet-status-container-avs,
+.docs-tiled-sidebar, .docs-sidebar-tile-controls, .docs-sidebar-tile-header, .waffle-sidebar-content, .waffle-sidebar-title, .waffle-named-ranges-add-range-inactive, .waffle-named-ranges-pill, .waffle-named-formulas-sidebar-list-view-footer-action-buttons,
+.label-input-label, .waffle-named-formulas-sidebar-create-step-a-new-argument-name-field-input, .waffle-ritz-protection-pill, .waffle-ritz-protection-edit-pill, .trix-data-prep-column-label-container,
+.goog-flat-menu-button-caption, .waffle-datavalidation-view-pill, .goog-flat-menu-button, .waffle-dropdown-chip-renderer, .waffle-inline-assistant-sidebar-insights-promo,
+.appsDocsRevisionsWizSidebarTileContainer, .jfk-bubble-promo, .grid-shim-bottom {
     background: var(--secondary-background-color) !important;
 }
 
@@ -950,8 +976,15 @@ div[style="background: #F0F6FF; border: 1px solid black; margin-top: 35px; paddi
 .kix-citations-insert-bibliography-container,
 .kix-citations-search-result-view-attributes-bottom,
 .docs-material #docs-script-button-bar .jfk-button.jfk-button-active,
-.docs-material #docs-script-button-bar .jfk-button.jfk-button-checked {
+.docs-material #docs-script-button-bar .jfk-button.jfk-button-checked,
+.jfk-textinput, .waffle-range-selection-container,
+.waffle-data-validation-auto-complete-row-active {
     background-color: var(--tertiary-background-color);
+}
+
+.docs-gm3-button-hover,
+.appsElementsCollapsibleListItemContentSection {
+    background-color: var(--tertiary-background-color) !important;
 }
 
 /////////////////////////////////////////////
@@ -1060,7 +1093,8 @@ div[style="background: #F0F6FF; border: 1px solid black; margin-top: 35px; paddi
 }
 
 .docs-grille-gm3.docos.docs-gm.docos-comments-pe .docos-input-cancel.jfk-button-standard.jfk-button-active, .docs-grille-gm3.docos.docs-gm.docos-comments-pe .docos-input-cancel.jfk-button-standard.jfk-button-focused, .docs-grille-gm3.docos.docs-gm.docos-comments-pe .docos-input-cancel.jfk-button-standard.jfk-button-focused.jfk-button-hover, // TECHNICALLY EVEN DARKER
-.docos-comments-pe .docos-streamdocoview:hover .docos-showrepliesbutton-collapsed-internal-container, .docos-comments-pe .docs-gm.docos-xeditor .docos-streamdocoview:hover, .docos-comments-pe .docs-gm.docos-xeditor .docos-streamdocoview:hover .docos-show-more {
+.docos-comments-pe .docos-streamdocoview:hover .docos-showrepliesbutton-collapsed-internal-container, .docos-comments-pe .docs-gm.docos-xeditor .docos-streamdocoview:hover, .docos-comments-pe .docs-gm.docos-xeditor .docos-streamdocoview:hover .docos-show-more,
+.goog-inline-block.docs-sheet-tab {
     background-color: var(--quaternary-background-color);
 }
 
@@ -1225,7 +1259,9 @@ div[style="background: #F0F6FF; border: 1px solid black; margin-top: 35px; paddi
     background: var(--hover-background-color);
 }
 
-.docs-checkupdialog-suggestion-button-focused.jfk-button-hover {
+.docs-checkupdialog-suggestion-button-focused.jfk-button-hover,
+.waffle-name-box-container:hover, .waffle-name-box:hover,
+.waffle-named-box-menu-open-sidebar-button-hover {
     background: var(--hover-background-color) !important;
 }
 
@@ -1319,7 +1355,8 @@ div[style="background: #F0F6FF; border: 1px solid black; margin-top: 35px; paddi
     background-color: var(--hover-background-color);
 }
 
-.kix-drawing-bubble-edit-button.docs-material-button-hover {
+.kix-drawing-bubble-edit-button.docs-material-button-hover,
+.goog-control-hover, .goog-control-focused {
     background-color: var(--hover-background-color) !important;
 }
 
@@ -1439,8 +1476,18 @@ div[style="background: #F0F6FF; border: 1px solid black; margin-top: 35px; paddi
     .companion-collapser-button.app-switcher-button-checked.app-switcher-button-focused
     .app-switcher-button-icon-background,
 .imageGenerationStylePresetsMenu
-    .imageGenerationStylePresetsMenuItem.goog-menuitem-active:hover:active {
-    background-color: var(--secondary-hover-background-color);
+    .imageGenerationStylePresetsMenuItem.goog-menuitem-active:hover:active,
+.docs-material-menu-button-flat-default-focused,
+.docs-sheet-button-hover {
+    background-color: var(--secondary-hover-background-color) !important;
+}
+
+/////////////////////////////////////////////////
+// BACKGROUND: TERTIARY HOVER BACKGROUND COLOR //
+/////////////////////////////////////////////////
+
+.docs-sheet-tab-hover {
+    background-color: var(--tertiary-hover-background-color) !important;
 }
 
 ///////////////////////////////////////
@@ -2218,6 +2265,10 @@ span.docs-material-gm-checkbox-focused,
     box-shadow: none;
 }
 
+.app-switcher-button-icon-background {
+    box-shadow: none !important;
+}
+
 .left-sidebar-container.navigation-widget-in-pageless-format
     .left-sidebar-container-content-child {
     box-shadow: inset -1px 0 0 0 var(--primary-border-color);
@@ -2364,6 +2415,32 @@ img.docs-generativeai-onboarding-dialog-image,
     background-color: var(--input-border-color);
 }
 
+.docs-icon-function-20 {
+    filter: brightness(10) !important;
+}
+
+.waffle-named-formulas-sidebar-zero-state-promo-img,
+.waffle-chip-extraction-sidebar-zero-state-image,
+.building-blocks-promo-image,
+.tablesAdvancedFormattingPromoImage {
+    filter: invert(0.9) hue-rotate(180deg) !important;
+}
+
+.waffle-named-formulas-expandable-input,
+.waffle-named-formulas-formula-definition-input,
+.waffle-named-formulas-sidebar-argument-chip-content,
+.waffle-dropdown-chip {
+    filter: invert(1.0) hue-rotate(180deg) !important;
+}
+
+.tablePropertiesSidebarButtonGroup, .tablePropertiesSidebarLeftAlignedButtonGroup {
+    filter: invert(0.85) hue-rotate(180deg);
+}
+
+.grid-shim-bottom {
+    border-top: 1px solid var(--tertiary-background-color);
+}
+
 // STROKE (DOCUMENT DETAILS LOADING CIRCLE)
 
 .javascriptMaterialdesignGm3WizCircularProgress-circular-progress__track {
@@ -2421,6 +2498,30 @@ img.docs-generativeai-onboarding-dialog-image,
     color: var(--tertiary-text-color);
 }
 
+// TEMPORARY SELECTORS ON POPUP DIALOGES
+
+.eVDL2-WsjYwc, .xEuuXd, .CeSLIf, .GH53Vc, .hVDDMd, .QipISb, .o8tTsf {
+    background-color: var(--secondary-background-color) !important;
+    background: var(--secondary-background-color) !important;
+}
+
+.zv7tnb, .ifDqI, .Jw4Ike, .quTB6, .mUIrbf-vQzf8d {
+    color: var(--primary-text-color) !important;
+}
+
+.EDtwUe, .RJS6zb {
+    color: var(--secondary-text-color) !important;
+}
+
+.I9OJHe, .mdf2C, .xjBc3b, .iPMcJc, .kM7Sgc, .FyWfTd, .nsKVp, .CeSLIf, .GH53Vc, .hVDDMd, .QipISb {
+    color: var(--sheets-blue-text) !important;
+}
+
+html.DocsAfterDark_shareDialog {
+    background: none !important;
+    background-color: transparent !important;
+}
+
 /////////////////////////
 // DOCUMENT BACKGROUND //
 /////////////////////////
@@ -2450,6 +2551,12 @@ img.docs-generativeai-onboarding-dialog-image,
 .kix-appview-editor canvas,
 .kix-cursor {
     filter: var(--DocsAfterDark_documentInvert);
+}
+
+[id$="-grid-table-container"] canvas,
+.trix-data-prep-insights-chart canvas,
+.waffle-revisions-frame {
+    filter: var(--DocsAfterDark_spreadsheetInvert);
 }
 
 // DOCUMENT BORDER SHOULD BE CONTROLLABLE IN ANY MODE

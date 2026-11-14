@@ -6,7 +6,16 @@
     "author": "Raymond Wang",
     "content_scripts": [
         {
-            "matches": ["*://docs.google.com/document/*"],
+            "matches": [
+                "*://docs.google.com/document/*",
+                "*://docs.google.com/spreadsheets/*"
+            ],
+            "js": ["docs.bundle.js"],
+            "css": ["global.bundle.css"]
+        },
+        {
+            "matches": ["*://docs.google.com/drivesharing/*"],
+            "all_frames": true,
             "js": ["docs.bundle.js"],
             "css": ["global.bundle.css"]
         }

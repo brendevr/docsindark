@@ -69,6 +69,22 @@ const documentInvert = {
     off: "none",
 };
 
+const spreadsheetInvert = {
+    normal: "invert(0.9)",
+    grayscale: "invert(1) contrast(80.5%) grayscale(100%)",
+    black: "invert(1) grayscale(100%)",
+    colorful: "invert(0.9) hue-rotate(180deg)",
+    off: "none",
+};
+
+const spreadsheetInvertMidnight = {
+    normal: "invert(1)",
+    grayscale: "invert(1) grayscale(100%)",
+    black: "invert(1) grayscale(100%)",
+    colorful: "invert(1) hue-rotate(180deg)",
+    off: "none",
+};
+
 const documentBorder = {
     border: "1px solid var(--primary-border-color)",
     off: "none",
@@ -112,6 +128,8 @@ export {
     documentBackgroundStyles,
     documentBackgroundDescriptions,
     documentInvert,
+    spreadsheetInvert,
+    spreadsheetInvertMidnight,
     documentBorder,
     buttonPosition,
     themeClasses,

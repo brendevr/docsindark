@@ -4,6 +4,8 @@ import {
     documentBackgroundStyles,
     documentBorder,
     documentInvert,
+    spreadsheetInvert,
+    spreadsheetInvertMidnight,
     enabledClass,
     links,
     replacements,
@@ -43,6 +45,11 @@ const browser_ns = getBrowserNamespace();
 const CURRENT_VERSION = browser_ns.runtime.getManifest().version;
 
 const REPLACEMENTS_PATH = "assets/replacements/";
+
+// The content script also runs inside Google's iframes (e.g. the share
+// dialog). Page-level UI (toggle button, update notification, metrics widget
+// watcher) and storage writes belong to the top-level document only.
+const IS_FRAME = window !== window.top;
 
 class DocsAfterDark {
     private extensionData: ExtensionData = defaultExtensionData;
@@ -101,12 +108,16 @@ class DocsAfterDark {
 
         // Run functions that aren't dependent on extension data
         this.replaceStyleURLs();
-        this.registerMetricWidgetWatcher();
+        if (!IS_FRAME) {
+            this.registerMetricWidgetWatcher();
+        }
 
         this.updateExtension();
 
         // Save the storage data to persist the default settings
-        await setStorage(this.extensionData);
+        if (!IS_FRAME) {
+            await setStorage(this.extensionData);
+        }
 
         registerStorageListener(this.handleStorageUpdate);
         registerMessageListener(this.handleMessageUpdate);
@@ -305,12 +316,15 @@ class DocsAfterDark {
     //       operation. Vice versa for updateLightMode().
 
     private updateDarkMode() {
+        console.log(location.pathname);
         if (this.extensionData.dark_mode.variant === DarkModeOperation.Normal) {
             addClassToHTML(themeClasses.dark, themeClasses.normal);
+            if (location.pathname.startsWith("/drivesharing/")) { addClassToHTML("shareDialog", themeClasses.normal); }
         } else if (
             this.extensionData.dark_mode.variant === DarkModeOperation.Midnight
         ) {
             addClassToHTML(themeClasses.dark, themeClasses.midnight);
+            if (location.pathname.startsWith("/drivesharing/")) { addClassToHTML("shareDialog", themeClasses.midnight); }
         } else {
             throw new Error(
                 "Unknown dark mode operation: " +
@@ -343,6 +357,7 @@ class DocsAfterDark {
 
         this.updateDocumentBackground();
         this.updateDocumentInvert();
+        this.updateSpreadsheetInvert();
         this.updateDocumentBorder();
         this.updateAccentColor();
         this.updateButton();
@@ -416,6 +431,83 @@ class DocsAfterDark {
         }
     }
 
+    private updateSpreadsheetInvert() {
+        if (!this.extensionData.invert_enabled) {
+            setStyleProperty("documentInvert", documentInvert.off);
+            setStyleProperty("spreadsheetInvert", spreadsheetInvert.off);
+            return;
+        }
+
+        switch (this.extensionData.invert_mode) {
+            case InvertMode.Gray:
+                if (
+                    this.extensionData.dark_mode.variant ===
+                    DarkModeOperation.Midnight
+                ) {
+                    setStyleProperty(
+                        "spreadsheetInvert",
+                        spreadsheetInvertMidnight.grayscale
+                    );
+                } else {
+                    setStyleProperty(
+                        "spreadsheetInvert",
+                        spreadsheetInvert.grayscale
+                    );
+                }
+                break;
+            case InvertMode.Black:
+                if (
+                    this.extensionData.dark_mode.variant ===
+                    DarkModeOperation.Midnight
+                ) {
+                    setStyleProperty(
+                        "spreadsheetInvert",
+                        spreadsheetInvertMidnight.black
+                    );
+                } else {
+                    setStyleProperty(
+                        "spreadsheetInvert",
+                        spreadsheetInvert.black
+                    );
+                }
+                break;
+            case InvertMode.Colorful:
+                if (
+                    this.extensionData.dark_mode.variant ===
+                    DarkModeOperation.Midnight
+                ) {
+                    setStyleProperty(
+                        "spreadsheetInvert",
+                        spreadsheetInvertMidnight.colorful
+                    );
+                } else {
+                    setStyleProperty(
+                        "spreadsheetInvert",
+                        spreadsheetInvert.colorful
+                    );
+                }
+                break;
+            case InvertMode.Normal:
+                if (
+                    this.extensionData.dark_mode.variant ===
+                    DarkModeOperation.Midnight
+                ) {
+                    setStyleProperty(
+                        "spreadsheetInvert",
+                        spreadsheetInvertMidnight.normal
+                    );
+                } else {
+                    setStyleProperty(
+                        "spreadsheetInvert",
+                        spreadsheetInvert.normal
+                    );
+                }
+                break;
+            default:
+                break;
+        }
+    }
+
     private updateDocumentBorder() {
         if (this.extensionData.show_border) {
             setStyleProperty("documentBorder", documentBorder.border);
@@ -468,6 +560,10 @@ class DocsAfterDark {
     }
 
     private updateButton() {
+        if (IS_FRAME) {
+            return;
+        }
+
         if (this.extensionData.button_options.show) {
             const button = this.createButton();
 
@@ -574,6 +670,10 @@ class DocsAfterDark {
     }
 
     private updateVersion() {
+        if (IS_FRAME) {
+            return;
+        }
+
         if (this.extensionData.version.last_version != CURRENT_VERSION) {
             Logger.info("Updated to version: " + CURRENT_VERSION);
             this.showUpdateNotification();
