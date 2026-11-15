@@ -316,7 +316,6 @@ class DocsInDark {
     //       operation. Vice versa for updateLightMode().
 
     private updateDarkMode() {
-        console.log(location.pathname);
         if (this.extensionData.dark_mode.variant === DarkModeOperation.Normal) {
             addClassToHTML(themeClasses.dark, themeClasses.normal);
             if (location.pathname.startsWith("/drivesharing/")) {
@@ -697,10 +696,11 @@ class DocsInDark {
 /////////////////
 
 (async () => {
-    if (isOnHomepage()) {
-        Logger.debug("On Google Docs homepage, will not enable DocsInDark.");
-        return;
-    }
+    // why are we skipping the homepage??
+    // if (isOnHomepage()) {
+    //     Logger.debug("On Google Docs homepage, will not enable DocsInDark.");
+    //     return;
+    // }
 
     const extension = new DocsInDark();
     extension.initialize();

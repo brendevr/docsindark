@@ -838,7 +838,8 @@ div[style="background: #F0F6FF; border: 1px solid black; margin-top: 35px; paddi
 }
 
 .docs-chat-message-body,
-.javascriptMaterialdesignGm3WizToolbarFloating-toolbar {
+.javascriptMaterialdesignGm3WizToolbarFloating-toolbar,
+.appsElementsColorPickerDropdownMenu {
     background-color: var(--secondary-background-color) !important;
 }
 
@@ -2622,4 +2623,66 @@ html.DocsInDark_shareDialog {
 
 .kix-page-paginated {
     outline: var(--DocsInDark_documentBorder);
+}
+
+///////////////////
+// DOCS HOMEPAGE //
+///////////////////
+
+.docs-homescreen-grid-item-thumbnail,
+.docs-homescreen-templates-templateview-preview {
+    filter: var(--DocsInDark_documentInvert) !important;
+}
+
+.docs-homescreen-item-container,
+.docs-homescreen-floater-grid-header,
+.docs-homescreen-floater-header,
+.gb_Vd, .gb_Zd, .gb_ae,
+.docs-homescreen-list-item,
+.docs-homescreen-list-header,
+.docs-homescreen-homescreenmain,
+.docs-homescreen-templates-bar-content  {
+    background-color: var(--root-background-color) !important;
+}
+
+.docs-hs-tmp-sch {
+    background-color: var(--primary-background-color) !important;
+}
+
+.docs-homescreen-grid-item-metadata-container,
+.ASO_SUGGESTIONS_TABLE {
+    background-color: var(--secondary-background-color) !important;
+    color: white !important;
+}
+
+.jfk-button,
+.docs-homescreen-owner-filter-button,
+#aso_search_form_anchor,
+.ASO_SUGGESTION_HIGHLIGHTED {
+    background-color: var(--tertiary-background-color) !important;
+}
+
+.jfk-button-hover::before, .goog-menu-button-hover::before, .gb_cd:hover {
+    background-color: var(--tertiary-hover-background-color) !important;
+}
+
+.docs-homescreen-grid-item-title,
+.docs-homescreen-grid-item-time-container,
+.docs-homescreen-icon,
+.docs-homescreen-templates-templateview-title,
+.docs-homescreen-templates-templateview-style,
+.jfk-button,
+.gb_2d, .gb_Bd,
+.gb_H,
+.gb_cd > svg {
+    color: var(--primary-text-color) !important;
+}
+
+.docs-homescreen-editorbar-actionbutton {
+    background: none !important;
+}
+
+// lmao google's layout css sucks so I gotta fix that too
+.docs-homescreen-fcc-flex-content-wrapper {
+    padding-right: 0 !important;
 }

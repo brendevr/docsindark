@@ -3,7 +3,7 @@
     "name": "DocsInDark",
     "version": "0.0.0",
     "description": "Dark Mode for Google Docs and Sheets.",
-    "author": "Raymond Wang",
+    "author": "Raymond Wang, brendevr",
     "content_scripts": [
         {
             "matches": [

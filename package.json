@@ -1,6 +1,6 @@
 {
     "name": "docsindark",
-    "version": "3.0.5",
+    "version": "3.0.6",
     "description": "Dark Mode for Google Docs and Sheets.",
     "type": "module",
     "devDependencies": {
