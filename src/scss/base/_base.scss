@@ -837,7 +837,8 @@ div[style="background: #F0F6FF; border: 1px solid black; margin-top: 35px; paddi
     background-color: var(--secondary-background-color);
 }
 
-.docs-chat-message-body {
+.docs-chat-message-body,
+.javascriptMaterialdesignGm3WizToolbarFloating-toolbar {
     background-color: var(--secondary-background-color) !important;
 }
 
@@ -2448,7 +2449,8 @@ img.docs-generativeai-onboarding-dialog-image,
 .waffle-named-formulas-sidebar-zero-state-promo-img,
 .waffle-chip-extraction-sidebar-zero-state-image,
 .building-blocks-promo-image,
-.tablesAdvancedFormattingPromoImage {
+.tablesAdvancedFormattingPromoImage,
+.kixImageOptionsSidebarTextWrappingButtonIcon {
     filter: invert(0.9) hue-rotate(180deg) !important;
 }
 
@@ -2466,6 +2468,10 @@ img.docs-generativeai-onboarding-dialog-image,
 
 .grid-shim-bottom {
     border-top: 1px solid var(--tertiary-background-color);
+}
+
+.icon-20X20.docs-icon {
+    color: black;
 }
 
 // STROKE (DOCUMENT DETAILS LOADING CIRCLE)
