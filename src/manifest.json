@@ -26,7 +26,7 @@
     },
     "web_accessible_resources": [
         {
-            "resources": ["docs.bundle.css"],
+            "resources": ["docs.bundle.css", "assets/equation-symbols.png"],
             "matches": ["*://docs.google.com/*"]
         }
     ],

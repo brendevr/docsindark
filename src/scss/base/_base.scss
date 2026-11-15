@@ -2475,6 +2475,11 @@ img.docs-generativeai-onboarding-dialog-image,
     color: black;
 }
 
+.kix-equation-toolbar-icon,
+.kix-equation-toolbar-palette-icon {
+    background-image: url('/assets/equation-symbols.png');
+}
+
 // STROKE (DOCUMENT DETAILS LOADING CIRCLE)
 
 .javascriptMaterialdesignGm3WizCircularProgress-circular-progress__track {
