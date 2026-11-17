@@ -1,6 +1,7 @@
 # DocsInDark
 
-<b>DocsAfterDark, the project this project builds on: </b> https://github.com/waymondrang/docsafterdark/
+<b>DocsAfterDark, the project this project builds on: </b> https://github.com/waymondrang/docsafterdark/ <br><br>
+<b>Now on the Firefox Add-on Store!</b> https://addons.mozilla.org/en-US/firefox/addon/docsindark/
 
 DocsInDark is an extension which overrides the styles present in Google Docs and Google Sheets to achieve a dark theme.
 <br>Since, ya know, google with its hundreds of billions of dollars can't do it themselves.
