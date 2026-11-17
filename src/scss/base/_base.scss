@@ -2644,6 +2644,7 @@ html.DocsInDark_shareDialog {
 .docs-homescreen-floater-grid-header,
 .docs-homescreen-floater-header,
 .gb_Vd, .gb_Zd, .gb_ae,
+.gb_8d, .gb_be, .gb_le,
 .docs-homescreen-list-item,
 .docs-homescreen-list-header,
 .docs-homescreen-homescreenmain,
@@ -2656,7 +2657,8 @@ html.DocsInDark_shareDialog {
 }
 
 .docs-homescreen-grid-item-metadata-container,
-.ASO_SUGGESTIONS_TABLE {
+.ASO_SUGGESTIONS_TABLE,
+form {
     background-color: var(--secondary-background-color) !important;
     color: white !important;
 }
