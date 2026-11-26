@@ -6,12 +6,14 @@ on:
             - "v*"
 
 permissions:
-    contents: write
+    contents: write # create the release
+    actions: write # delete artifacts
 
 jobs:
     release:
         name: build and publish release
         runs-on: ubuntu-latest
+        timeout-minutes: 15
 
         steps:
             - name: checkout repository
@@ -21,6 +23,7 @@ jobs:
               uses: actions/setup-node@v5
               with:
                   node-version: 24
+                  cache: npm
 
             - name: verify tag matches package.json version
               run: |
@@ -43,3 +46,15 @@ jobs:
                   gh release create "$GITHUB_REF_NAME" release/*.zip \
                       --title "$GITHUB_REF_NAME" \
                       --generate-notes
+
+            - name: delete all artifacts in this repo
+              env:
+                  GH_TOKEN: ${{ github.token }}
+                  REPO: ${{ github.repository }}
+              run: |
+                  ids=$(gh api --paginate "repos/$REPO/actions/artifacts?per_page=100" \
+                          --jq '.artifacts[].id')
+                  for id in $ids; do
+                      echo "Deleting artifact $id"
+                      gh api -X DELETE "repos/$REPO/actions/artifacts/$id"
+                  done
